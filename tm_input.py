@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # === CONFIGURATION ===
-width, height = 1920, 1080
+width, height = 300, 200
 fps = 60
 output_file = "input_visualizer.mp4"
 
@@ -768,7 +768,7 @@ def draw_box(img, center, size, color, arrow='up'):
 
 def draw_visualizer(steer, accel, brake):
     img = np.full((height, width, 3), BG_COLOR, dtype=np.uint8)
-    cx, cy = width - 160, 120
+    cx, cy = width - 160, 100
 
     # Triangles: ← →
     triangle_offset = 35
